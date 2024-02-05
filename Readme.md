@@ -60,6 +60,7 @@ gcloud compute instances create gcelab2 --machine-type e2-medium --zone=$ZONE
 ```
 
 ## Connect to a VM using SSH:
+![GCP SSH VM](https://cdn.discordapp.com/attachments/1081183405779197973/1204074591270604810/image.png)
 ```bash
 gcloud compute ssh [INSTANCE_NAME] --zone=$ZONE
 ```
