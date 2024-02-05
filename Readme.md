@@ -38,6 +38,7 @@ export REGION=[REGION]
 export ZONE=[ZONE]
 ```
 ## Working with Virtual Machines ( Compute Engine)
+![GCP VM Instance](https://cdn.discordapp.com/attachments/1081183405779197973/1204074589445947463/image.png?ex=65d368d8&is=65c0f3d8&hm=9b0f1eaeffa747ca0beb10df860676d0b8ac8b21dee9af1106955
 ## Update and install packages on a VM:
 ```bash sudo apt-get update
 sudo apt install -y nginx
