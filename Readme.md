@@ -43,16 +43,19 @@ export ZONE=[ZONE]
 sudo apt install -y nginx
 ```
 ## Check if Nginx is running:
-```bash ps auwx | grep nginx
+```bash
+ps auwx | grep nginx
 ```
 
 ## Access the external IP of the VM in a web browser.
 Use the Cloud Console to create a new instance or run the following CLI command:
-```bash gcloud compute instances create [INSTANCE_NAME] --machine-type e2-medium --zone=$ZONE
+```bash
+gcloud compute instances create [INSTANCE_NAME] --machine-type e2-medium --zone=$ZONE
 ```
 
 ## Connect to a VM using SSH:
-```bash gcloud compute ssh [INSTANCE_NAME] --zone=$ZONE
+```bash
+gcloud compute ssh [INSTANCE_NAME] --zone=$ZONE
 ```
 Use EXPORT to create global variables for flags, e.g., --zone=$ZONE.
 
