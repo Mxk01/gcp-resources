@@ -51,8 +51,9 @@ ps auwx | grep nginx
 Use the Cloud Console to create a new instance or run the following CLI command:
 ```bash
 gcloud compute instances create [INSTANCE_NAME] --machine-type e2-medium --zone=$ZONE
+```
+```bash
 gcloud compute instances create gcelab2 --machine-type e2-medium --zone=$ZONE
-
 ```
 
 ## Connect to a VM using SSH:
