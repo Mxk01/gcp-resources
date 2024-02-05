@@ -49,6 +49,7 @@ ps auwx | grep nginx
 ```
 
 ## Access the external IP of the VM in a web browser.
+![GCP External IP VM](https://cdn.discordapp.com/attachments/1081183405779197973/1204074589869703250/image.png?ex=65d368d8&is=65c0f3d8&hm=e865e9275190a8d9010e66a19d7b0541e13c192ee6956d79b1b4536fe1e134d8&)
 Use the Cloud Console to create a new instance or run the following CLI command:
 ```bash
 gcloud compute instances create [INSTANCE_NAME] --machine-type e2-medium --zone=$ZONE
