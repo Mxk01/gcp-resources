@@ -66,3 +66,23 @@ gcloud compute ssh [INSTANCE_NAME] --zone=$ZONE
 ```
 Use EXPORT to create global variables for flags, e.g., --zone=$ZONE.
 
+## Connect to a VM using RDP:
+The following script will check if the server is ready to accept RDP connection.Some OS components might take a while to load :
+```bash
+gcloud compute instances get-serial-port-output instance-1
+```
+Keep repeating this command and press N key. 
+
+## Connecting to a Windows VM with RDP
+![GCP VM RDP1](https://cdn.discordapp.com/attachments/1081183405779197973/1204416668105969724/image.png)
+Select the Windows Server operating system from BootDisk.
+
+![GCP VM RDP](https://cdn.discordapp.com/attachments/1081183405779197973/1204416522181808149/image.png)
+Before connecting to the VM we need to reset the password.We can do it via the CLI or the UI.
+```bash
+gcloud compute reset-windows-password [instance] --zone [zone] --user [username]
+```
+
+### Open RDP on Windows and type in the external IP address of your VM  
+For example : 35.237.200.242
+Connect to the RDP with username and password provided by the Cloud Engine 
